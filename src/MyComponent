@@ -1,0 +1,5 @@
+const MyComponent = () => {
+    return "Hello World";
+}
+
+export default MyComponent;
