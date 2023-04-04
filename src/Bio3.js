@@ -1,14 +1,14 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-const Bio = () => {
+const Bio3 = () => {
     return (
         <Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src="https://avatars.githubusercontent.com/u/127901195?s=400&u=2ecd8d0482ad62c1ca6b529d6231adf5f0b849c7&v=4" />
+          <Card.Img variant="top" src="https://new.jjay.cuny.edu/sites/default/files/2023-02/Building%20Streetscape.jpg" />
           <Card.Body>
-            <Card.Title>Jared Quinones</Card.Title>
+            <Card.Title>The Second Slide</Card.Title>
             <Card.Text>
-              This is where the bio would be
+              This would be the second slide bio
             </Card.Text>
             <Button variant="primary">Go somewhere else</Button>
           </Card.Body>
@@ -16,4 +16,4 @@ const Bio = () => {
       );
     }
     
-    export default Bio;
+    export default Bio3;
