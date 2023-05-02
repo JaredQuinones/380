@@ -10,7 +10,7 @@ const Bio2 = () => {
             <Card.Text>
               This would be the first slide bio
             </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            <Button variant="primary">Go somewhere else</Button>
           </Card.Body>
         </Card>
       );
