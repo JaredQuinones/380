@@ -3,8 +3,14 @@ import Form from 'react-bootstrap/Form';
 import { Routes } from 'react-router-dom';
 
 function MyFormControl() {
+  const handleSubmit = (event) => {
+    console.log(document.querySelector(".passwordvalue").value)
+    event.preventDefault();
+    event.stopPropagation();
+
+  };
   return (
-    <Form>
+    <Form onSubmit={handleSubmit}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
         <Form.Control type="email" placeholder="Enter email" />
@@ -15,7 +21,7 @@ function MyFormControl() {
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" />
+        <Form.Control type="password" placeholder="Password" className="passwordvalue" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <Form.Check type="checkbox" label="Check me out" />
@@ -24,7 +30,7 @@ function MyFormControl() {
         Submit
       </Button>
     </Form>
-    
+
   );
 }
 
