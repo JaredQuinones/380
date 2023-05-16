@@ -17,9 +17,9 @@ function App() {
       <Link to="/carousel">Carousel</Link>
       <Link to="/login"> Login</Link>
       <Routes>
-        <Route path="/" element={<Bio2/>}></Route>
-        <Route path="carousel" element={<MyCarousel/>}></Route>
-        <Route path="login" element={<MyFormControl/>}></Route>
+        <Route path="/" element={<Bio2 />}></Route>
+        <Route path="carousel" element={<MyCarousel />}></Route>
+        <Route path="login" element={<MyFormControl />}></Route>
       </Routes>
     </div>
   );
